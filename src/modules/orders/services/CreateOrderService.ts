@@ -39,8 +39,6 @@ class CreateOrderService {
       products.map(product => ({ id: product.id })),
     );
 
-    console.log('before::::', findProducts);
-
     const order_products = products.map(product => {
       const findProduct = findProducts.find(item => item.id === product.id);
 
